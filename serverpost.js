@@ -76,6 +76,9 @@ var httpServer = http.createServer(function (req, resp) {
 });
 
 // Http server listen on port 8888.
-httpServer.listen(8888);
+
+
+
+httpServer.listen(process.env.PORT || 8888);
 
 console.log("Server is started.");
