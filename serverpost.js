@@ -62,21 +62,16 @@ var httpServer = http.createServer(function (req, resp) {
             fs.readFile(fileName, { encoding: 'utf-8', flag: 'r' }, function (error, data) {
 
                 if (!error) {
-                    /* Set Access-Control-Allow-Origin http header will fix No 'Access-Control-Allow-Origin' header is present on the requested resource error
-                       when use XMLHttpRequest object to get this server page via ajax method. */
-                    resp.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
-                    resp.end(data);
+                    //resp.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
+                    //resp.end(data);
                 } else {
-                    resp.writeHead(404, { 'Access-Control-Allow-Origin': '*' });
+                   // resp.writeHead(404, { 'Access-Control-Allow-Origin': '*' });
                     resp.end(JSON.stringify(error));
                 }
             });
         }
     //}
 });
-
-// Http server listen on port 8888.
-
 
 
 httpServer.listen(process.env.PORT || 8888);
