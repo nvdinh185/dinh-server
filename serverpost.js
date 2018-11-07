@@ -62,10 +62,10 @@ var httpServer = http.createServer(function (req, resp) {
             fs.readFile(fileName, { encoding: 'utf-8', flag: 'r' }, function (error, data) {
 
                 if (!error) {
-                    //resp.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
-                    //resp.end(data);
+                    resp.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
+                    resp.end(data);
                 } else {
-                   // resp.writeHead(404, { 'Access-Control-Allow-Origin': '*' });
+                    resp.writeHead(404, { 'Access-Control-Allow-Origin': '*' });
                     resp.end(JSON.stringify(error));
                 }
             });
