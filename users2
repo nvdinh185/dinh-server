@@ -1,19 +1,10 @@
 {"results":[
-	{
-		
+	{		
 		"name":"Hoa hong",
-		"picture":{
-			"large":"https://randomuser.me/api/portraits/women/20.jpg",
-			"medium":"https://randomuser.me/api/portraits/med/women/20.jpg",
-			"thumbnail":"https://randomuser.me/api/portraits/thumb/women/20.jpg"
-		}
+		"picture":"https://randomuser.me/api/portraits/women/20.jpg",		
 	},
 	{	
 		"name":"Hoa lan",
-		"picture":{
-			"large":"https://randomuser.me/api/portraits/women/20.jpg",
-			"medium":"https://randomuser.me/api/portraits/med/women/20.jpg",
-			"thumbnail":"https://randomuser.me/api/portraits/thumb/women/20.jpg"
-		}
+		"picture":"https://randomuser.me/api/portraits/women/20.jpg",
 	}
 ]}
