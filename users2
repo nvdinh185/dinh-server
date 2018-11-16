@@ -1,10 +1,10 @@
 {"results":[
 	{		
 		"name":"Hoa hong",
-		"picture":"https://randomuser.me/api/portraits/women/20.jpg",		
+		"picture":"https://randomuser.me/api/portraits/women/20.jpg"		
 	},
 	{	
 		"name":"Hoa lan",
-		"picture":"https://randomuser.me/api/portraits/women/20.jpg",
+		"picture":"https://randomuser.me/api/portraits/women/20.jpg"
 	}
 ]}
