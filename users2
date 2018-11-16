@@ -1,8 +1,7 @@
 {"results":[
 	{
-		"gender":"female",
-		"name":{"title":"miss","first":"yara","last":"Ã¸vstedal"},
-		"email":"yara.Ã¸vstedal@example.com",
+		
+		"name":"title",
 		"picture":{
 			"large":"https://randomuser.me/api/portraits/women/20.jpg",
 			"medium":"https://randomuser.me/api/portraits/med/women/20.jpg",
@@ -10,9 +9,7 @@
 		}
 	},
 	{	
-		"gender":"female",
-		"name":{"title":"miss","first":"yara","last":"Ã¸vstedal"},
-		"email":"yara.Ã¸vstedal@example.com",
+		"name":"title",
 		"picture":{
 			"large":"https://randomuser.me/api/portraits/women/20.jpg",
 			"medium":"https://randomuser.me/api/portraits/med/women/20.jpg",
