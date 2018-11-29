@@ -1,0 +1,7 @@
+{
+"status": "ok",
+"message": "login thanh cong!",
+"danhsach": [1,2,3,4],
+"danhsachchu": ["a", "b", "c", "d"],
+"mangdoituong": [{"mon": "vatly", "diem": 10}, {"mon": "toan", "diem": 10}]
+}
