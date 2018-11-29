@@ -1,0 +1,38 @@
+{"results":[
+	{
+		"id":1,
+		"ten": "Dinh",
+		"gioiTinh": true,
+		"soThich": { "hoc": true, "choi": false } 
+	},
+	{
+		"id":2,
+		"ten": "Hoa",
+		"gioiTinh": true,
+		"soThich": { "hoc": true, "choi": false }
+	},
+	{
+		"id":3,
+		"ten": "Hao",
+		"gioiTinh": false,
+		"soThich": { "hoc": true, "choi": false }
+	},
+	{
+		"id":4,
+		"ten": "Quyen",
+		"gioiTinh": false,
+		"soThich": { "hoc": true, "choi": false }
+	},
+	{
+		"id":5,
+		"ten": "Uyen",
+		"gioiTinh": true,
+		"soThich": { "hoc": true, "choi": false }
+	},
+	{
+		"id":6,
+		"ten": "Quynh",
+		"gioiTinh": false,
+		"soThich": { "hoc": true, "choi": false }
+	}
+]}
