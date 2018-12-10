@@ -12,16 +12,16 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => res.send("Hello"));
 app.get('/*', (req, res) => {
-    fs.readFile(__dirname + req.url, { encoding: 'utf-8', flag: 'r' }, 
-		function (error, data) {
-			if (!error) {
-				res.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
-				res.end(data);
-			} else {
-				res.writeHead(404, { 'Access-Control-Allow-Origin': '*' });
-				res.end(JSON.stringify(error));
+    fs.readFile(__dirname + req.url, { encoding: 'utf-8', flag: 'r' },
+        function (error, data) {
+            if (!error) {
+                res.writeHead(200, { 'Access-Control-Allow-Origin': '*' });
+                res.end(data);
+            } else {
+                res.writeHead(404, { 'Access-Control-Allow-Origin': '*' });
+                res.end(JSON.stringify(error));
             }
-		});
+        });
 });
 
 app.post('/signin', jsonParser, (req, res) => {
@@ -29,6 +29,18 @@ app.post('/signin', jsonParser, (req, res) => {
         res.send({ status: "ok", message: "login thanh cong!" });
     else
         res.send({ status: "nok", message: "login that bai!" });
+});
+var mangUsers = [];
+app.post('/signup', jsonParser, (req, res) => {
+    var username1 = req.body.username;
+    var password1 = req.body.password;
+    var index = mangUsers.findIndex(e => e.username == username1 && e.password == password1);
+    if (index == -1) {
+        var user = { username: username1, password: password1 };
+        mangUsers.push(user);
+        res.send({ status: "ok", message: "dang ky thanh cong!" });
+    } else
+        res.send({ status: "nok", message: "dang ky that bai!" });
 })
 
 app.listen(process.env.PORT || 3000, () => console.log("Server is running!"));
