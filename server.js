@@ -50,6 +50,15 @@ app.post('/login', jsonParser, (req, res) => {
         res.send({ status: "ok", message: "dang nhap thanh cong!" });
     } else
         res.send({ status: "nok", message: "dang nhap that bai!" });
+});
+app.post('/logout', jsonParser, (req, res) => {
+    var username1 = req.body.username;
+    var password1 = req.body.password;
+    var index = mangUsers.findIndex(e => e.username == username1 && e.password == password1);
+    if (index >=0) {
+        res.send({ status: "ok", message: "dang xuat thanh cong!" });
+    } else
+        res.send({ status: "nok", message: "dang xuat that bai!" });
 })
 
 app.listen(process.env.PORT || 3000, () => console.log("Server is running!"));
