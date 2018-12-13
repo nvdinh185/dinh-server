@@ -2,31 +2,49 @@
 	{
 		"id":1,
 		"ten": "Dinh",
-		"gioiTinh": true 
+		"gioiTinh": true,
+		"toan": 8,
+		"ly": 7,
+		"hoa": 8
 	},
 	{
 		"id":2,
 		"ten": "Hoa",
-		"gioiTinh": true
+		"gioiTinh": true,
+		"toan": 8,
+		"ly": 7,
+		"hoa": 8
 	},
 	{
 		"id":3,
 		"ten": "Hao",
-		"gioiTinh": false
+		"gioiTinh": false,
+		"toan": 8,
+		"ly": 7,
+		"hoa": 8
 	},
 	{
 		"id":4,
 		"ten": "Quyen",
-		"gioiTinh": false
+		"gioiTinh": false,
+		"toan": 8,
+		"ly": 7,
+		"hoa": 8
 	},
 	{
 		"id":5,
 		"ten": "Uyen",
-		"gioiTinh": true
+		"gioiTinh": true,
+		"toan": 8,
+		"ly": 7,
+		"hoa": 8
 	},
 	{
 		"id":6,
 		"ten": "Quynh",
-		"gioiTinh": false
+		"gioiTinh": false,
+		"toan": 8,
+		"ly": 7,
+		"hoa": 8
 	}
 ]
