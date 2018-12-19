@@ -30,7 +30,7 @@ app.post('/signin', jsonParser, (req, res) => {
     else
         res.send({ status: "nok", message: "login that bai!" });
 });
-var mangUsers = [];
+var mangUsers = [{ username: "dinh", password: 123 }];
 app.post('/signup', jsonParser, (req, res) => {
     var username1 = req.body.username;
     var password1 = req.body.password;
