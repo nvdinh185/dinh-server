@@ -4,8 +4,11 @@
   "description": "",
   "main": "serverpost.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
